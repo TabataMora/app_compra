@@ -27,7 +27,41 @@ class ProductPage extends StatelessWidget {
             )
           ];
         },
-        body: Container(),
+        body: ListView(
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.only(
+                top: 10,
+                left: 10,
+                right: 10,
+              ),
+              child: Text(
+                "Dry Fit Long Sleeve",
+                style: TextStyle(
+                  fontSize: 26,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: Text("by Nike"),
+            ),
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: Text(
+                "Details",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: Text(
+                "TextoTextoTextoTextoTextoTextoTextoTextoTexto",
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
