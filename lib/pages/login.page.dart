@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:layout/pages/home.page.dart';
 import 'package:layout/pages/signup.page.dart';
 
 class LoginPage extends StatelessWidget {
