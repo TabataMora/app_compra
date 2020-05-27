@@ -13,8 +13,8 @@ class CartPage extends StatelessWidget {
             ),
           ),
           Container(
-            height: 80,
             color: Colors.black12,
+            height: 80,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -59,7 +59,7 @@ class CartPage extends StatelessWidget {
                     child: Text(
                       "Checkout",
                       style: TextStyle(
-                        color: Theme.of(context).accentColor,
+                        color: Colors.white,
                       ),
                     ),
                     onPressed: () => {},
