@@ -7,7 +7,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          color: Color(0xFFF5F5F5),
+          color: Theme.of(context).accentColor,
           padding: EdgeInsets.only(left: 20, top: 80, right: 20, bottom: 40),
           child: Column(
             children: <Widget>[
@@ -35,14 +35,21 @@ class LoginPage extends StatelessWidget {
                             children: <Widget>[
                               Text(
                                 "Welcome",
-                                style: TextStyle(
-                                    fontSize: 30, fontWeight: FontWeight.w500),
+                                style: Theme.of(context).textTheme.headline3,
                               ),
-                              Text("Sign in to continue"),
+                              Text(
+                                "Sign in to continue",
+                                style: Theme.of(context).textTheme.subtitle1,
+                              ),
                             ],
                           ),
                           FlatButton(
-                            child: Text("Sign Up"),
+                            child: Text(
+                              "Sign Up",
+                              style: TextStyle(
+                                color: Theme.of(context).primaryColor,
+                              ),
+                            ),
                             onPressed: () {
                               Navigator.push(
                                 context,
@@ -97,6 +104,9 @@ class LoginPage extends StatelessWidget {
                         child: FlatButton(
                           child: Text(
                             "Forgot your password?",
+                            style: TextStyle(
+                              color: Theme.of(context).primaryColor,
+                            ),
                           ),
                           onPressed: () {},
                         ),
@@ -138,7 +148,10 @@ class LoginPage extends StatelessWidget {
                 width: double.infinity,
                 height: 60,
                 decoration: BoxDecoration(
-                  border: Border.all(width: 2.0, color: Colors.blue),
+                  border: Border.all(
+                    width: 2.0,
+                    color: Theme.of(context).primaryColor,
+                  ),
                   borderRadius: BorderRadius.all(
                     Radius.circular(5),
                   ),
@@ -166,7 +179,10 @@ class LoginPage extends StatelessWidget {
                 width: double.infinity,
                 height: 60,
                 decoration: BoxDecoration(
-                  border: Border.all(width: 2.0, color: Colors.blue),
+                  border: Border.all(
+                    width: 2.0,
+                    color: Theme.of(context).primaryColor,
+                  ),
                   borderRadius: BorderRadius.all(
                     Radius.circular(5),
                   ),

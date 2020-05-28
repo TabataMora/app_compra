@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:layout/pages/tabs.page.dart';
+import 'package:layout/themes/dark.theme.dart';
 import 'package:layout/themes/light.theme.dart';
 
 void main() {

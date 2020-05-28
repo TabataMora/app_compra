@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:layout/widgets/category/category-list.widget.dart';
 import 'package:layout/widgets/product/produtct-list.widget.dart';
-import 'package:layout/widgets/searche-box.widget.dart';
+import 'package:layout/widgets/search-box.widget.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
             left: 15,
           ),
           width: double.infinity,
-          color: Color(0xFFF5F5F5),
+          //color: Color(0xFFF5F5F5),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
